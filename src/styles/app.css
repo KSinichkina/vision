@@ -49,9 +49,18 @@ footer div {
   padding: 10px 50px;
 }
 
-.email-us a,
 .feedback a,
 .facebook a {
+  color: #fff;
+  font-weight: 900;
+  text-decoration: none;
+  margin: 5px 0 0 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.email-us a {
   color: #fff;
   font-weight: 900;
   text-decoration: none;
@@ -59,6 +68,12 @@ footer div {
 
 .footer-wrapper {
   display: flex;
+}
+
+.facebook, .feedback {
+  position: relative;
+  padding: 0;
+  width: 190px;
 }
 
 .feedback:before {
