@@ -49,8 +49,32 @@ footer div {
   padding: 10px 50px;
 }
 
-.email-us a  {
+.email-us a,
+.feedback a,
+.facebook a {
   color: #fff;
   font-weight: 900;
   text-decoration: none;
+}
+
+.footer-wrapper {
+  display: flex;
+}
+
+.feedback:before {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url(../assets/feedback-icon.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.facebook:before {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url(../assets/facebook.png) no-repeat 50% 50%;
+  background-size: cover;
 }
