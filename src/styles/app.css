@@ -1,0 +1,56 @@
+@import url("_vars.css");
+@import url("page-effect.css");
+@import url("gallery.css");
+
+.header-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  font-size: 130pt;
+  font-weight: 100;
+  color: #444;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  padding: 20px;
+  font-size: 32pt;
+  font-weight: 100;
+  text-align: center;
+  color: dimgray;
+}
+
+.works {
+  padding: 20px;
+  font-weight: 100;
+  text-align: center;
+  font-size: 24pt;
+  text-transform: uppercase;
+  color: #444;
+}
+
+.contacts {
+  padding: 20px;
+  font-size: 24pt;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+footer div {
+  color: #fff;
+  font-size: 15pt;
+  font-weight: 100;
+  padding: 10px 50px;
+}
+
+.email-us a  {
+  color: #fff;
+  font-weight: 900;
+  text-decoration: none;
+}
