@@ -93,6 +93,10 @@
     bottom: 0;
     z-index: 9;
   }
+
+  .main-page-footer {
+    position: absolute;
+  }
   
   footer div {
     color: #fff;

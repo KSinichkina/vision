@@ -95,6 +95,11 @@
       max-width: 285px;
     }
 
+
+    footer {
+        position: relative;
+    }
+
     .footer-wrapper {
       flex-direction: column;
       padding: 0;
