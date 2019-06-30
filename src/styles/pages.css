@@ -1,0 +1,17 @@
+.about-layout,
+.prices-layout,
+.contacts-layout {
+    margin: 80px 0;
+}
+
+.about {
+    margin: 100px auto;
+    text-align: justify;
+}
+
+.prices,
+.about, 
+.contacts {
+    /* width: 1234px; */
+    /* margin: auto; */
+}

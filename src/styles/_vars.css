@@ -1,5 +1,7 @@
-body {
+* {
   font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 ul, p, a,
@@ -22,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: 'Montserrat-Bold';
-src('../assets/font/Montserrat-Bold.ttf');
+  src('../assets/font/Montserrat-Bold.ttf');
   src: local('☺'), url('../assets/font/Montserrat-Bold.woff') format('woff'),
   url('../assets/font/Montserrat-Bold.ttf') format('truetype'),
   url('../assets/font/Montserrat-Bold.svg') format('svg');

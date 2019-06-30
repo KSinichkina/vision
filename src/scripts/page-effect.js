@@ -1,13 +1,10 @@
-function scrollFooter(scrollY, heightFooter)
-{
-    if(scrollY >= heightFooter)
-    {
+function scrollFooter(scrollY, heightFooter) {
+    if(scrollY >= heightFooter) {
         $('footer').css({
             'bottom' : '0px'
         });
     }
-    else
-    {
+    else {
         $('footer').css({
             'bottom' : '-' + heightFooter + 'px'
         });
@@ -15,16 +12,14 @@ function scrollFooter(scrollY, heightFooter)
 }
 
 $(window).load(function(){
-    var windowHeight        = $(window).height(),
+    const windowHeight        = $(window).height(),
         footerHeight        = $('footer').height(),
         heightDocument      = (windowHeight) + ($('.content').height()) + ($('footer').height()) - 20;
 
-    // Definindo o tamanho do elemento pra animar
     $('#scroll-animate, #scroll-animate-main').css({
         'height' :  heightDocument + 'px'
     });
 
-    // Definindo o tamanho dos elementos header e conteúdo
     $('header').css({
         'height' : windowHeight + 'px',
         'line-height' : windowHeight + 'px'
@@ -36,9 +31,8 @@ $(window).load(function(){
 
     scrollFooter(window.scrollY, footerHeight);
 
-    // ao dar rolagem
     window.onscroll = function(){
-        var scroll = window.scrollY;
+        const scroll = window.scrollY;
 
         $('#scroll-animate-main').css({
             'top' : '-' + scroll + 'px'
@@ -50,4 +44,11 @@ $(window).load(function(){
 
         scrollFooter(scroll, footerHeight);
     }
+
+    $('.navigation-item.portfolio')[0].onclick = function(event){
+        event.preventDefault();
+        const headerHeight = $('header').height();
+        window.scrollTo(0, headerHeight);
+    }
+    
 });
