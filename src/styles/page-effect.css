@@ -46,8 +46,8 @@ footer
 
 .content
 {
-  height: 1000px;
-  min-height: 1000px;
+  /* min-height: 1000px; */
+  padding: 60px 0;
   background: #ededed;
   position: relative;
   z-index: 1;

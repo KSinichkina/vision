@@ -1,4 +1,9 @@
 @media screen and (max-width: 1024px) {
+
+  #toggle, .toggle-container {
+    display: block;
+  }
+
   .navigation-logo {
     display: none;
   }
@@ -6,6 +11,14 @@
   .navigation {
     display: none;
     flex-direction: column;
+  }
+
+  .gallery {
+    width: 600px;
+  }
+
+  .prices {
+    max-width: 600px;
   }
 
   #toggle {
@@ -70,4 +83,20 @@
   /* On screens that are 600px or less, set the background color to olive */
   @media screen and (max-width: 600px) {
 
+    .title-wrapper .title {
+      font-size: 70pt;
+    }
+
+    .gallery {
+      width: 320px;
+    }
+
+    .prices {
+      max-width: 285px;
+    }
+
+    .footer-wrapper {
+      flex-direction: column;
+      padding: 0;
+    }
   }

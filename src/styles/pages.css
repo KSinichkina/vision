@@ -5,6 +5,9 @@
     transform: translate(-50%, -50%);
   }
   
+  #toggle, .toggle-container {
+    display: none;
+  }
   
   .header-navigation {
     position: fixed;
@@ -74,6 +77,22 @@
     text-transform: uppercase;
     color: #444;
   }
+
+  .description {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+  }
+
+  .gallery {
+    margin-bottom: 150px !important;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+  }
   
   footer div {
     color: #fff;
@@ -135,15 +154,11 @@
     margin: 80px 0;
 }
 
-.about {
-    margin: 100px auto;
-    text-align: justify;
-}
-
 .prices,
 .about, 
 .contacts {
-    /* width: 1234px; */
-    /* margin: auto; */
+  max-width: 1234px;
+  text-align: justify;
+  margin: auto;
+  padding: 100px 50px;
 }
-
