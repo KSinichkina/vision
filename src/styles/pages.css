@@ -1,3 +1,134 @@
+  .title-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  .header-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    background: #444;
+    height: 80px !important;
+    line-height: 40px !important;
+  }
+  
+  .navigation-logo img {
+    margin: 10px 35px;
+    float: left;
+    width: 60px;
+    height: 60px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: center;
+    margin: .5em 0;
+    padding: 0;
+  }
+  
+  .navigation-item {
+    padding: .3em .75em;
+    font-size: 2em;
+    font-weight: 300;
+  }
+  .navigation-item > a {
+    color: #9ab;
+    text-align: center;
+    text-decoration: none;
+    transition: all .5s;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .navigation-item > a:hover {
+    background: #ffffff06;
+    color: #adf;
+  }
+  
+  .title {
+    font-size: 130pt;
+    font-weight: 100;
+    color: #444;
+    text-transform: uppercase;
+  }
+  
+  .subtitle {
+    padding: 20px;
+    font-size: 32pt;
+    font-weight: 100;
+    text-align: center;
+    color: dimgray;
+  }
+  
+  .portfolio-title {
+    padding: 20px;
+    font-weight: 100;
+    text-align: center;
+    font-size: 24pt;
+    text-transform: uppercase;
+    color: #444;
+  }
+  
+  footer div {
+    color: #fff;
+    font-size: 15pt;
+    font-weight: 100;
+    padding: 8px 50px;
+  }
+  
+  .instagram a,
+  .facebook a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 15px 0 0 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .email-us a {
+    color: #fff;
+    font-weight: 900;
+    text-decoration: none;
+  }
+  
+  .footer-wrapper {
+    display: flex;
+    background: #444;
+  }
+  
+  .facebook, .instagram {
+    position: relative;
+    padding: 0;
+    width: 190px;
+  }
+  
+  .instagram:before {
+    content: '';
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin: 5px 0 0 10px;
+    background: url(../assets/insta-icon.png) no-repeat 50% 50%;
+    background-size: cover;
+  }
+  
+  .facebook:before {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url(../assets/fb-icon.png) no-repeat 50% 50%;
+    background-size: cover;
+  }  
+
 .about-layout,
 .prices-layout,
 .contacts-layout {
@@ -15,3 +146,4 @@
     /* width: 1234px; */
     /* margin: auto; */
 }
+
