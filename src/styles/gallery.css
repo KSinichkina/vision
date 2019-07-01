@@ -3,6 +3,7 @@
   margin: auto;
   border-radius: 3px;
   overflow: hidden;
+  position: relative;
 }
 .img-c {
   width: 300px;
