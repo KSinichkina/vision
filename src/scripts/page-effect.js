@@ -50,5 +50,9 @@ $(window).load(function(){
         const headerHeight = $('header').height();
         window.scrollTo(0, headerHeight);
     }
-    
+
+    if (window.location.href.includes('#portfolio')) {
+        const headerHeight = $('header').height();
+        window.scrollTo(0, headerHeight);
+    }
 });
