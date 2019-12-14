@@ -1,5 +1,5 @@
 .gallery {
-  width: 900px;
+  width: 1000px;
   margin: auto;
   border-radius: 3px;
   overflow: hidden;
@@ -53,4 +53,11 @@
   left: 0 !important;
   top: 0 !important;
   transition-delay: 50ms;
+}
+
+@media screen and (min-width: 786px) {
+  .img-c {
+    width: 500px;
+    height: 500px;
+  }
 }

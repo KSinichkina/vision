@@ -12,9 +12,16 @@ function scrollFooter(scrollY, heightFooter) {
 }
 
 $(window).load(function(){
-    const windowHeight        = $(window).height(),
+    window.onresize = resize;
+    let windowHeight        = $(window).height(),
         footerHeight        = $('footer').height(),
         heightDocument      = (windowHeight) + ($('.content').height()) + ($('footer').height()) - 20;
+
+    function resize() {
+        windowHeight        = $(window).height(),
+        footerHeight        = $('footer').height(),
+        heightDocument      = (windowHeight) + ($('.content').height()) + ($('footer').height()) - 20;
+    }
 
     $('#scroll-animate, #scroll-animate-main').css({
         'height' :  heightDocument + 'px'

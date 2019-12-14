@@ -5,24 +5,24 @@ $(function() {
         $(this).css('background-image', 'url(' + imgSrc + ')');
     })
 
-
     $('.img-c').click(function() {
-        let w = $(this).outerWidth();
-        let h = $(this).outerHeight();
-        let x = $(this).offset().left;
-        let y = $(this).offset().top;
-
-
-        $('.active').not($(this)).remove();
-        let copy = $(this).clone();
-        copy.insertAfter($(this)).height(h).width(w).delay(500).addClass('active')
-        $('.active').css('top', y - 8);
-        $('.active').css('left', x - 8);
-
-        setTimeout(function() {
-            copy.addClass('positioned')
-        }, 0)
-
+        if (window.innerHeight < window.innerWidth) {
+            let w = $(this).outerWidth();
+            let h = $(this).outerHeight();
+            let x = $(this).offset().left;
+            let y = $(this).offset().top;
+    
+    
+            $('.active').not($(this)).remove();
+            let copy = $(this).clone();
+            copy.insertAfter($(this)).height(h).width(w).delay(500).addClass('active')
+            $('.active').css('top', y - 8);
+            $('.active').css('left', x - 8);
+    
+            setTimeout(function() {
+                copy.addClass('positioned')
+            }, 0)
+        }
     })
 })
 
