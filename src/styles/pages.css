@@ -46,7 +46,7 @@
     text-align: center;
     text-decoration: none;
     transition: all .5s;
-    font-size: 20px;
+    font-size: 15px;
     text-transform: uppercase;
   }
   .navigation-item > a:hover {
@@ -89,7 +89,7 @@
   }
 
   footer {
-    position: absolute;
+    position: sticky;
     bottom: 0;
     z-index: 9;
   }
@@ -165,4 +165,5 @@
   text-align: justify;
   margin: auto;
   padding: 100px 50px;
+  min-height: -webkit-fill-available;
 }

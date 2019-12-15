@@ -54,6 +54,7 @@
     height: 50px;
     margin: 15px;
     background: url(../assets/burger-icon.png) 50% 50%;
+    background-color: #ededed;
     background-size: contain;
     border: none;
     cursor: pointer;
